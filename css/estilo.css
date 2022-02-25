@@ -37,7 +37,8 @@ body {
     display: flex;
     list-style-type: none;
     font-size: 18px;
-    font-weight: 400; 
+    font-weight: 400;
+     
 }
 ul li {
     margin: 5px;
@@ -45,6 +46,7 @@ ul li {
 a {
     color: black;
     text-decoration: none;
+    transition: 0.2s;
 }
 .presentacion {
     display: grid;
@@ -197,5 +199,55 @@ a {
     }
 
 }   
+footer {
+    background: linear-gradient(to top,#CDC8BF,#5F5D59);
+    z-index: 2;
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.hero h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  transition: 0.5s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 300%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+li a:hover {
+    color: #D3CEC7;
+}
+h1 {
+    animation-name: valdi;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes valdi {
+    0% {
+        color: white;
+    }
+    25% {
+        color: #ECE9E6;
+    }
+    50% {
+        color: #C5C2BF;
+    }
+    75% {
+        color: #817E7B;
+    }
+    100% {
+        color: black;
+    }
+}
+
 
 
